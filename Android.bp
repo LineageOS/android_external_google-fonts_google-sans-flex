@@ -1,0 +1,24 @@
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+
+package {
+    default_applicable_licenses: ["external_google-fonts_google-sans-flex_license"],
+}
+
+license {
+    name: "external_google-fonts_google-sans-flex_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-OFL", // by exception only
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+prebuilt_font {
+    name: "GoogleSansFlex-Regular.ttf",
+    src: "GoogleSansFlex-Regular.ttf",
+    product_specific: true,
+}
